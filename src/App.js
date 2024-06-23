@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import AddUser from './components/Users/AddUser';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import UserList from './components/Users/UsersList';
 
 function App() {
+  const [users, setUsers] = useState([]);
+
+  const addUserHandler = (user) => {
+    setUsers((prevUsers) => {
+      return [...prevUsers, user];
+    });
+  };
+
   return (
     <div>
-      <AddUser />
+      <AddUser onAddUser={addUserHandler} />
+      <UserList users={users} />
     </div>
   );
 }
