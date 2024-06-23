@@ -9,6 +9,18 @@ const AddUser = () => {
   const [age, setAge] = useState('');
   const [users, setUsers] = useState([]);
 
+  function userHandler(event) {
+    if (!name.trim().length && !age.trim().length) {
+      alert('Invalid Input');
+      return;
+    }
+    event.preventDefault();
+    console.log(name, age);
+    setUsers([...users, { name, age }]);
+    setName('');
+    setAge('');
+  }
+
   return (
     <Card className='input'>
       <form action=''>
@@ -28,7 +40,7 @@ const AddUser = () => {
             value={age}
             className='form-control'
           />
-          <Button>Add User</Button>
+          <Button onClick={userHandler}>Add User</Button>
         </div>
         <br />
         <div>
