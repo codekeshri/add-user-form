@@ -3,8 +3,6 @@ import Card from '../UI/Card';
 import './UsersList.css';
 
 const UserList = (props) => {
-  //   const [users, setUsers] = useState([]);
-
   return (
     <Card className='users'>
       <ul className='list-group'>
