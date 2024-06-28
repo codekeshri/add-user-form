@@ -35,7 +35,7 @@ const AddUser = (props) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       {error && (
         <ErrorModal
           title={error.title}
@@ -66,7 +66,7 @@ const AddUser = (props) => {
           </div>
         </form>
       </Card>
-    </React.Fragment>
+    </>
   );
 };
 
