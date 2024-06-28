@@ -4,6 +4,7 @@ import Card from "../UI/Card";
 import Button from "../UI/Button";
 import "./AddUser.css";
 import ErrorModal from "../UI/ErrorModal";
+import Wrapper from "../UI/Wrapper";
 
 const AddUser = (props) => {
   const [name, setName] = useState("");
@@ -35,7 +36,7 @@ const AddUser = (props) => {
   };
 
   return (
-    <div>
+    <Wrapper>
       {error && (
         <ErrorModal
           title={error.title}
@@ -66,7 +67,7 @@ const AddUser = (props) => {
           </div>
         </form>
       </Card>
-    </div>
+    </Wrapper>
   );
 };
 
