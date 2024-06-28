@@ -1,9 +1,13 @@
 {
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "jsxSingleQuote": true,
-    "printWidth": 80,
-    "tabWidth": 2,
-    "semi": true
-  }
-  
+  "editor.formatOnSave": true,
+  "javascript.format.enable": true,
+  "css.format.enable": true,
+  "html.format.enable": true,
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.semi": true
+}

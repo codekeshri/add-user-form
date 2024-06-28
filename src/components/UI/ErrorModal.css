@@ -5,7 +5,7 @@
   width: 100%;
   height: 100vh;
   z-index: 10;
-  background: rgba(156, 52, 52, 0.75);
+  background: rgba(217, 205, 205, 0.75);
 }
 
 .modal {
@@ -15,26 +15,33 @@
   width: 80%;
   z-index: 100;
   overflow: hidden;
+  color: blanchedalmond;
 }
 
 .header {
-  background: #4f005f;
+  background: #517fd3;
   padding: 1rem;
+  color: blanchedalmond;
 }
 
 .header h2 {
   margin: 0;
   color: white;
+  color: blanchedalmond;
 }
 
 .content {
   padding: 1rem;
+  color: black;
+  background-color: bisque;
 }
 
 .actions {
   padding: 1rem;
   display: flex;
   justify-content: flex-end;
+  color: blanchedalmond;
+  background-color: blueviolet;
 }
 
 @media (min-width: 768px) {

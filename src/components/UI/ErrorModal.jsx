@@ -1,22 +1,24 @@
-import React from 'react';
-import Card from './Card';
-import Button from './Button';
-import './ErrorModal.css';
+import React from "react";
+import Button from "./Button";
+import Card from "./Card";
+import "./ErrorModal.css";
 
 const ErrorModal = (props) => {
   return (
     <div>
-      <Card className='modal'>
-        <header className='header'>
-          <h2>{props.title}</h2>
-        </header>
-        <div className='content'>
-          <p>{props.message}</p>
-        </div>
-        <footer className='actions'>
-          <Button>Okay</Button>
-        </footer>
-      </Card>
+      <div className="backdrop" onClick={props.onConfirm}>
+        <Card className={""}>
+          <header className="header">
+            <h1>{props.title}</h1>
+          </header>
+          <div className="content">{props.message}</div>
+          <footer>
+            <Button className="actions" onClick={props.onConfirm}>
+              Okay
+            </Button>
+          </footer>
+        </Card>
+      </div>
     </div>
   );
 };
